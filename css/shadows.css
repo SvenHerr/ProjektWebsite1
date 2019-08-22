@@ -1,0 +1,15 @@
+.shadow {
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+}
+
+.shadow-skillKreis {
+    box-shadow: 0px 1px 12px rgb(141, 137, 137);
+}
+
+.shadow-dark {
+    box-shadow: 0px 1px 12px rgb(158, 69, 69);
+}
+
+.shadow-head {
+    box-shadow: 0px 1px 12px rgb(141, 137, 137);
+}

@@ -1,0 +1,55 @@
+.shadow-skillKreis {
+    box-shadow: 0px 1px 12px rgb(141, 137, 137);
+}
+
+.skillBox {
+    background: black;
+    margin: auto;
+    margin-top: 55px;
+    justify-content: center;
+    align-items: center;
+    height: 150px;
+    display: flex;
+    flex-direction: row;
+}
+
+.skillKreis {
+    margin: auto;
+    border-radius: var(--radius);
+    background: var(--color-background);
+    width: 50px;
+    max-height: 50px;
+}
+
+.skillKreis:hover {
+    background-color: var(--color-button-hover);
+    box-shadow: 0px 1px 15px 5px rgba(242, 241, 245, 0.9);
+    color: #fff;
+    transform: translateY(-3px);
+}
+
+.skillKreis>p {
+    color: black;
+    line-height: 10px;
+    font-size: 18px;
+}
+
+@media screen and (min-width:1000px) {
+    .skillBox {
+        height: 140px;
+        display: flex;
+        flex-direction: row;
+    }
+    .skillKreis {
+        margin: auto;
+        border-radius: var(--radius);
+        background: var(--color-background);
+        width: 90px;
+        max-height: 90px;
+    }
+    .skillKreis>p {
+        color: black;
+        line-height: 40px;
+        font-size: 25px;
+    }
+}
