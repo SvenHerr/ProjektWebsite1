@@ -4,16 +4,24 @@
     box-sizing: border-box
 }
 
+:root {
+    --color-button-blue: #1005FF;
+    --radius: 70px;
+    --color-border: #707070;
+    --color-text: white;
+    --color-background: white;
+    --color-button-hover: lightblue;
+}
+
 html {
     font-size: 100%
 }
 
 body {
     margin: 0;
-    padding: 20px;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 1rem;
-    color: #fff
+    color: var(--color-text);
 }
 
 aside,
@@ -24,21 +32,65 @@ section {
     display: block;
     margin: 0;
     padding: 1.25rem;
-    border: 1px solid #000;
-    color: #fff
+    border: 1px solid black;
+    color: var(--color-text);
+}
+
+header h1 {
+    margin-top: 80px;
 }
 
 main {
-    background: #000
+    background: black;
+}
+
+.shadow {
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+}
+
+.shadow-skillKreis {
+    box-shadow: 0px 1px 12px rgb(141, 137, 137);
+}
+
+.hero-button {
+    background-color: var(--color-button-blue);
+    width: 190px;
+    height: 52px;
+    border: 1px solid var(--color-button-blue);
+    border-radius: var(--radius);
+    color: var(--color-text);
+}
+
+button:hover {
+    background-color: var(--color-button-hover);
+    box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
+    color: #fff;
+    transform: translateY(-3px);
+}
+
+.menu {
+    width: 100%;
+}
+
+.right {
+    float: right;
+    margin-right: 16px;
 }
 
 .centered {
     text-align: center;
 }
 
+.menu>button {
+    background-color: Transparent;
+    border: transparent;
+    color: var(--color-text);
+}
+
 .skillBox {
     background: black;
     margin: auto;
+    margin-top: 75px;
     justify-content: center;
     align-items: center;
 }
@@ -46,11 +98,17 @@ main {
 .skillKreis {
     display: inline-block;
     margin: auto;
-    border-radius: 70px;
-    background: green;
-    width: 50px;
-    height: 50px;
+    border-radius: var(--radius);
+    background: var(--color-background);
+    width: 90px;
+    max-height: 90px;
     text-align: center;
+}
+
+.skillKreis>p {
+    color: black;
+    line-height: 40px;
+    font-size: 25px;
 }
 
 .wrapper {
@@ -58,12 +116,58 @@ main {
     max-width: 75rem
 }
 
+.buttonAndSocial {
+    margin-top: 40px;
+}
+
+
+/*
 .header {
     background: #03a9f4
 }
 
 .hero {
     background: #d22b1f
+}*/
+
+.social-buttons-container {
+    margin: auto;
+    width: 100px;
+    height: 100px;
+    margin-right: 10%;
+    margin-top: -70px;
+}
+
+.social-buttons-container>div {
+    display: inline-block;
+    margin: auto;
+    margin-bottom: 4px;
+    border-radius: var(--radius);
+    background: var(--color-background);
+    width: 50px;
+    height: 50px;
+    text-align: center;
+}
+
+.social-buttons-container>div>p {
+    color: black;
+    font-size: 20px;
+    line-height: 10px;
+}
+
+.githubimage {
+    width: 52px;
+    /*margin-top: -1px;
+    margin-left: -1px; */
+    border: 1px solid white;
+    border-radius: 70px;
+    background-color: white;
+}
+
+.linkedIn {
+    background-color: #0077B5 !important;
+    font-family: Myriad Pro;
+    font-weight: bold;
 }
 
 .card {
@@ -71,22 +175,39 @@ main {
     height: 350px;
     background: black;
     margin: auto;
+    margin-top: 5px;
+    margin-bottom: 5px;
     text-align: center;
-    margin-top: 10px;
-    border-radius: 70px;
+    border: 2px solid var(--color-border);
+    border-radius: var(--radius);
 }
 
-.cardText {
+.card>.cardText {
     padding: 25px;
+    color: #C7C3F7;
 }
 
-.cardHeadline {
-    padding-top: 30px;
+.card>button {
+    background-color: var(--color-button-blue);
+    width: 40%;
+    height: 10%;
+    border: 1px solid;
+    border-radius: var(--radius);
+}
+
+.content-div {
+    margin-bottom: 10px;
+}
+
+.card>.headline {
+    font-size: 24px;
+    margin-top: 25px;
 }
 
 .content {
     justify-content: center;
     align-items: center;
+    margin-top: 100px;
 }
 
 @media screen and (min-width:1000px) {
@@ -97,7 +218,7 @@ main {
 
 .content {
     flex: 1;
-    background: #129a22;
+    /* background: #129a22;*/
     flex-direction: row;
 }
 
@@ -111,9 +232,11 @@ main {
     border: 1px solid #000
 }
 
+
+/*
 .footer {
     background: #616161
-}
+}*/
 
 .card {
     max-width: 300px;
