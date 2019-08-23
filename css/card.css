@@ -12,8 +12,8 @@
     height: 350px;
     background: black;
     margin: auto;
-    margin-top: 5px;
-    margin-bottom: 5px;
+    margin-top: -55px;
+    margin-bottom: 0px;
     text-align: center;
     border: 2px solid var(--color-border);
     border-radius: var(--radius);
@@ -37,6 +37,7 @@
     height: 10%;
     border: 1px solid;
     border-radius: var(--radius);
+    margin-top: 15px;
 }
 
 .card_headline {
@@ -44,17 +45,20 @@
     margin-top: 25px;
 }
 
-@media screen and (min-width: 760px) {
+@media screen and (min-width: 740px) {
     .card_button {
         width: 25%;
         height: 12%;
-        margin-top: 40px;
+        margin-top: 45px;
+        max-width: 350px;
     }
 }
 
 @media screen and (min-width: 900px) {
     .card {
-        max-width: 300px;
+        max-width: 360px;
+        margin-top: 5px;
+        margin-bottom: 5px;
     }
     .card_button {
         width: 40%;
