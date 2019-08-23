@@ -2,7 +2,7 @@
     box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
 }
 
-.shadow-skillKreis {
+.skillKreis--shadow {
     box-shadow: 0px 1px 12px rgb(141, 137, 137);
 }
 
@@ -11,5 +11,9 @@
 }
 
 .shadow-head {
+    box-shadow: 0px 1px 12px rgb(141, 137, 137);
+}
+
+.menubtn--shadow {
     box-shadow: 0px 1px 12px rgb(141, 137, 137);
 }

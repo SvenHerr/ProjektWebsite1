@@ -1,0 +1,16 @@
+.menu {
+    width: 100%;
+}
+
+.button--right {
+    float: right;
+    margin-right: 16px;
+}
+
+.menu button {
+    background-color: Transparent;
+    border: transparent;
+    color: var(--color-text);
+    height: 25px;
+    font-size: 14px;
+}

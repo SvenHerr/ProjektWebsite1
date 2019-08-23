@@ -17,15 +17,14 @@
     text-align: center;
     border: 2px solid var(--color-border);
     border-radius: var(--radius);
-    max-width: 300px;
 }
 
-.card .cardText {
+.card_text {
     padding: 25px;
     color: #C7C3F7;
 }
 
-.card button {
+.card_button {
     background-color: var(--color-button-blue);
     width: 40%;
     height: 10%;
@@ -33,15 +32,22 @@
     border-radius: var(--radius);
 }
 
-.card .headline {
+.card_headline {
     font-size: 24px;
     margin-top: 25px;
 }
 
-@media screen and (min-width:1000px) {
-    .flex-container {
-        display: flex
+@media screen and (min-width: 760px) {
+    .card {
+        max-width: 300px;
     }
+    .content {
+        flex: 1;
+        flex-direction: row;
+    }
+}
+
+@media screen and (min-width: 900px) {
     .card {
         max-width: 300px;
     }
